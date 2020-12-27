@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>basic example</title>
+</head>
+<body>
+<script src="../dist/uncompressed/skylark-jquery-qrcode-all.js"></script>
+
+
+<p>Render in table</p>
+<div id="qrcodeTable"></div>
+<p>Render in canvas</p>
+<div id="qrcodeCanvas"></div>
+<script>
+	//jQuery('#qrcode').qrcode("this plugin is great");
+	jQuery('#qrcodeTable').qrcode({
+		render	: "table",
+		text	: "http://jetienne.com"
+	});	
+	jQuery('#qrcodeCanvas').qrcode({
+		text	: "http://jetienne.com"
+	});	
+</script>
+
+</body>
+</html>
